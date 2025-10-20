@@ -4,10 +4,12 @@ body {
   text-align: center;
   padding: 20px;
 }
+
 .tree {
   display: flex;
   justify-content: center;
 }
+
 .tree ul {
   position: relative;
   padding-top: 20px;
@@ -15,12 +17,16 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .tree li {
   text-align: center;
   position: relative;
   padding: 20px 5px 0 5px;
 }
-.tree li::before, .tree li::after {
+
+/* Garis penghubung antar node */
+.tree li::before,
+.tree li::after {
   content: '';
   position: absolute;
   top: 0;
@@ -28,25 +34,34 @@ body {
   width: 50%;
   height: 20px;
 }
+
 .tree li::before {
-  left: 50%;
-  border-left: 2px solid #555;
-}
-.tree li::after {
   right: 50%;
   border-right: 2px solid #555;
 }
+
+.tree li::after {
+  left: 50%;
+  border-left: 2px solid #555;
+}
+
+/* Hilangkan garis kalau cuma 1 anak */
 .tree li:only-child::before,
 .tree li:only-child::after {
   display: none;
 }
+
 .tree li:only-child {
   padding-top: 0;
 }
+
+/* Hilangkan garis di ujung kiri/kanan */
 .tree li:first-child::before,
 .tree li:last-child::after {
   border: none;
 }
+
+/* Kotak nama */
 .tree li div {
   display: inline-block;
   border: 2px solid #555;
@@ -55,10 +70,12 @@ body {
   background-color: white;
   font-weight: bold;
 }
+
 .male {
   background-color: #cce5ff;
   border-color: #0066cc;
 }
+
 .female {
   background-color: #ffe6f2;
   border-color: #cc0099;
