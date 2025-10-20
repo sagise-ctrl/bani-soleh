@@ -1,0 +1,29 @@
+{
+  "name": "Bapak Contoh",
+  "born": "1950-01-01",
+  "spouse": "Ibu Contoh",
+  "children": [
+    {
+      "name": "Anak 1",
+      "born": "1975-05-10",
+      "spouse": "Pasangan 1",
+      "children": [
+        {
+          "name": "Cucu A",
+          "born": "2000-03-03",
+          "children": []
+        },
+        {
+          "name": "Cucu B",
+          "born": "2003-07-07",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Anak 2",
+      "born": "1978-09-09",
+      "children": []
+    }
+  ]
+}
